@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'jquery-rails'
 
 group :development, :test do
@@ -45,8 +45,10 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'slim-rails'
-  gem 'selenium-webdriver'
   gem 'database_cleaner'
+  gem 'capybara-webkit'
+  gem 'bootstrap', '~> 4.3.1'
+  gem 'sprockets-rails', :require => 'sprockets/railtie'
 end
 
 group :development do
@@ -62,7 +64,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # gem 'chromedriver-helper'
   gem 'shoulda-matchers'
   gem 'launchy'
 end

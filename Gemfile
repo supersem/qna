@@ -49,6 +49,7 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'bootstrap', '~> 4.3.1'
   gem 'sprockets-rails', :require => 'sprockets/railtie'
+  gem 'hirb'
 end
 
 group :development do

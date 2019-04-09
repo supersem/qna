@@ -1,6 +1,8 @@
-h1= @question.title
+h1 Question title:
+= @question.title
+h1 Question body:
 p= @question.body
-
+h1 Answers:
 .answers
   = render 'questions/answers'
 

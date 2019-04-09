@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.configure do |config|
   Capybara.javascript_driver = :webkit
+  Capybara.ignore_hidden_elements = false
 
   config.include AcceptanceMacros, type: :feature
 
